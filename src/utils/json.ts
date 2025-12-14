@@ -2,15 +2,15 @@ import { GameState } from '../game/types';
 import initialGameStateRaw from '../assets/initialGameState.json';
 import { Color } from '../game/types';
 
+const initialAsGameState = initialGameStateRaw as unknown as GameState;
+
 export const defaultGameState: GameState = {
-  ...initialGameStateRaw,
-  turn: initialGameStateRaw.turn === 'red' ? Color.RED : Color.BLACK,
+  ...initialAsGameState,
+  turn: initialAsGameState.turn === 'red' ? Color.RED : Color.BLACK,
 };
 
 export async function loadInitialGameState(): Promise<GameState> {
-  const response = await fetch(process.env.PUBLIC_URL + '/assets/initialGameState.json');
-  const data = await response.json();
-  return data as GameState;
+  return defaultGameState;
 }
 
 export function exportGameState(state: GameState): string {

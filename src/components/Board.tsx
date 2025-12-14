@@ -131,7 +131,12 @@ const Board: React.FC = () => {
             const isAvailable = availableMoves.some(m => m.x === x && m.y === y);
             // Log each field and its piece
             console.log(`Rendering cell (${x},${y}):`, field);
-            const bgFile = `${String(field.type)}.png`;
+            let bgFile = `${String(field.type)}.png`;
+            if (field.type === TileType.DEN) {
+              // Red den is at (3,0), black den is at (3,8)
+              if (x === 3 && y === 0) bgFile = 'den-red.png';
+              if (x === 3 && y === 8) bgFile = 'den-black.png';
+            }
 
             return (
               <div

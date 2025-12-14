@@ -1,6 +1,105 @@
 {
-  "board": [],
-  "pieces": [],
-  "turn": "black",
+  "board": [
+    [
+      { "x": 0, "y": 0, "type": "land", "piece": "lion-red" },
+      { "x": 1, "y": 0, "type": "land", "piece": null },
+      { "x": 2, "y": 0, "type": "trap", "piece": null },
+      { "x": 3, "y": 0, "type": "den", "piece": null },
+      { "x": 4, "y": 0, "type": "trap", "piece": null },
+      { "x": 5, "y": 0, "type": "land", "piece": null },
+      { "x": 6, "y": 0, "type": "land", "piece": "tiger-red" }
+    ],
+    [
+      { "x": 0, "y": 1, "type": "land", "piece": null },
+      { "x": 1, "y": 1, "type": "land", "piece": "dog-red" },
+      { "x": 2, "y": 1, "type": "land", "piece": null },
+      { "x": 3, "y": 1, "type": "trap", "piece": null },
+      { "x": 4, "y": 1, "type": "land", "piece": null },
+      { "x": 5, "y": 1, "type": "land", "piece": "cat-red" },
+      { "x": 6, "y": 1, "type": "land", "piece": null }
+    ],
+    [
+      { "x": 0, "y": 2, "type": "land", "piece": "rat-red" },
+      { "x": 1, "y": 2, "type": "land", "piece": null },
+      { "x": 2, "y": 2, "type": "land", "piece": "leopard-red" },
+      { "x": 3, "y": 2, "type": "land", "piece": null },
+      { "x": 4, "y": 2, "type": "land", "piece": "wolf-red" },
+      { "x": 5, "y": 2, "type": "land", "piece": null },
+      { "x": 6, "y": 2, "type": "land", "piece": "elephant-red" }
+    ],
+    [
+      { "x": 0, "y": 3, "type": "land", "piece": null },
+      { "x": 1, "y": 3, "type": "water", "piece": null },
+      { "x": 2, "y": 3, "type": "water", "piece": null },
+      { "x": 3, "y": 3, "type": "land", "piece": null },
+      { "x": 4, "y": 3, "type": "water", "piece": null },
+      { "x": 5, "y": 3, "type": "water", "piece": null },
+      { "x": 6, "y": 3, "type": "land", "piece": null }
+    ],
+    [
+      { "x": 0, "y": 4, "type": "land", "piece": null },
+      { "x": 1, "y": 4, "type": "water", "piece": null },
+      { "x": 2, "y": 4, "type": "water", "piece": null },
+      { "x": 3, "y": 4, "type": "land", "piece": null },
+      { "x": 4, "y": 4, "type": "water", "piece": null },
+      { "x": 5, "y": 4, "type": "water", "piece": null },
+      { "x": 6, "y": 4, "type": "land", "piece": null }
+    ],
+    [
+      { "x": 0, "y": 5, "type": "land", "piece": null },
+      { "x": 1, "y": 5, "type": "water", "piece": null },
+      { "x": 2, "y": 5, "type": "water", "piece": null },
+      { "x": 3, "y": 5, "type": "land", "piece": null },
+      { "x": 4, "y": 5, "type": "water", "piece": null },
+      { "x": 5, "y": 5, "type": "water", "piece": null },
+      { "x": 6, "y": 5, "type": "land", "piece": null }
+    ],
+    [
+      { "x": 0, "y": 6, "type": "land", "piece": "elephant-black" },
+      { "x": 1, "y": 6, "type": "land", "piece": null },
+      { "x": 2, "y": 6, "type": "land", "piece": "wolf-black" },
+      { "x": 3, "y": 6, "type": "land", "piece": null },
+      { "x": 4, "y": 6, "type": "land", "piece": "leopard-black" },
+      { "x": 5, "y": 6, "type": "land", "piece": null },
+      { "x": 6, "y": 6, "type": "land", "piece": "rat-black" }
+    ],
+    [
+      { "x": 0, "y": 7, "type": "land", "piece": null },
+      { "x": 1, "y": 7, "type": "land", "piece": "cat-black" },
+      { "x": 2, "y": 7, "type": "land", "piece": null },
+      { "x": 3, "y": 7, "type": "trap", "piece": null },
+      { "x": 4, "y": 7, "type": "land", "piece": null },
+      { "x": 5, "y": 7, "type": "land", "piece": "dog-black" },
+      { "x": 6, "y": 7, "type": "land", "piece": null }
+    ],
+    [
+      { "x": 0, "y": 8, "type": "land", "piece": "tiger-black" },
+      { "x": 1, "y": 8, "type": "land", "piece": null },
+      { "x": 2, "y": 8, "type": "trap", "piece": null },
+      { "x": 3, "y": 8, "type": "den", "piece": null },
+      { "x": 4, "y": 8, "type": "trap", "piece": null },
+      { "x": 5, "y": 8, "type": "land", "piece": null },
+      { "x": 6, "y": 8, "type": "land", "piece": "lion-black" }
+    ]
+  ],
+  "pieces": [
+    { "id": "elephant-red", "type": "elephant", "color": "red", "position": { "x": 6, "y": 2 }, "captured": false },
+    { "id": "lion-red", "type": "lion", "color": "red", "position": { "x": 0, "y": 0 }, "captured": false },
+    { "id": "tiger-red", "type": "tiger", "color": "red", "position": { "x": 6, "y": 0 }, "captured": false },
+    { "id": "leopard-red", "type": "leopard", "color": "red", "position": { "x": 2, "y": 2 }, "captured": false },
+    { "id": "wolf-red", "type": "wolf", "color": "red", "position": { "x": 4, "y": 2 }, "captured": false },
+    { "id": "dog-red", "type": "dog", "color": "red", "position": { "x": 1, "y": 1 }, "captured": false },
+    { "id": "cat-red", "type": "cat", "color": "red", "position": { "x": 5, "y": 1 }, "captured": false },
+    { "id": "rat-red", "type": "rat", "color": "red", "position": { "x": 0, "y": 2 }, "captured": false },
+    { "id": "elephant-black", "type": "elephant", "color": "black", "position": { "x": 0, "y": 6 }, "captured": false },
+    { "id": "lion-black", "type": "lion", "color": "black", "position": { "x": 6, "y": 8 }, "captured": false },
+    { "id": "tiger-black", "type": "tiger", "color": "black", "position": { "x": 0, "y": 8 }, "captured": false },
+    { "id": "leopard-black", "type": "leopard", "color": "black", "position": { "x": 4, "y": 6 }, "captured": false },
+    { "id": "wolf-black", "type": "wolf", "color": "black", "position": { "x": 2, "y": 6 }, "captured": false },
+    { "id": "dog-black", "type": "dog", "color": "black", "position": { "x": 5, "y": 7 }, "captured": false },
+    { "id": "cat-black", "type": "cat", "color": "black", "position": { "x": 1, "y": 7 }, "captured": false },
+    { "id": "rat-black", "type": "rat", "color": "black", "position": { "x": 6, "y": 6 }, "captured": false }
+  ],
+  "turn": "red",
   "winner": null
 }
